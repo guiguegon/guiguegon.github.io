@@ -5,6 +5,8 @@ title: Galería (Parte III)
 
 Siguiendo con la serie de **galeria**, en la <a href="/gallery-I/">primera entrega</a> vimos cómo crear una galería propia en Android, en la <a href="/gallery-II/">segunda entrega</a> cómo añadir multi selección y cómo grabar videos. En la última entrega de la serie, vamos a añadir la previsualización de la cámara trasera en la cabecera.
 
+Cuando hayamos terminado con esta entrada tendréis una galería propia completamente customizada y lista para agregar a vuestro proyecto. Os animo a hacer un fork del repositorio y hacer las modificaciones que queráis.
+
 <h2>android.hardware.camera y android.hardware.camera2</h2>
 Existen actualmente dos API para manejar la cámara de un dispositivo: [android.hardware.camera](https://developer.android.com/reference/android/hardware/Camera.html) y [android.hardware.camera2](https://developer.android.com/reference/android/hardware/camera2/package-summary.html). La primera fue **deprecada** en la versión 21 y sustituída por la segunda versión que añade nuevas funcionalidades como la posibilidad de controlar individualmente parámetros específicos de la cámara. Además el manejo de la API es completamente diferente.
 
@@ -75,7 +77,7 @@ Para solucionar este inconveniente, podemos usar la nueva API android.hardware.c
 <div align="center">
     <figure>
         <img src="/images/gallery/camera.png" alt="Preview camera" width="576">
-          <figcaption>Previsualización de la camara</figcaption>
+          <figcaption>Previsualización de la cámara</figcaption>
     </figure>
 </div>
 
@@ -148,7 +150,7 @@ public boolean onSurfaceTextureDestroyed(SurfaceTexture arg0) {
 
 ```
 
-Ahora si tenemos nuestra camara controlada por un hilo separado de la UI.
+Ahora si tenemos nuestra cámara controlada por un hilo separado de la UI.
 
 <h2>Extra: FileProvider</h2>
 Con la llegada de Android 7.0 alias **Nougat** surgen algunos problemas con el código utilizado en esta serie. En concreto, una de las nuevas limitaciones (en aras de mejorar la seguridad todo sea dicho) es no poder pasar uris con el esquema *file://* a través de una intención. En la nueva versión de Android esto provoca una excepción de tipo *FileUriExposedException*. Para sortear esta limitación, desde hace varias versiones de la librería de soporte, se añadió la clase **FileProvider** que nos facilita el intercambio de ficheros entre apps.
@@ -177,5 +179,5 @@ content://(package_name).provider/external_files/Pictures/IMG_1473335502000.jpeg
 He actualizado el repositorio de <a href="https://github.com/guiguegon/GalleryModule">GalleryModule</a> con el código nuevo y aquí os dejo la dependencia para añadirla en vuestro fichero <em>build.gradle:</em>
 
 ```markdown
-compile 'es.guiguegon:gallerymodule:1.2.3'
+compile 'es.guiguegon:gallerymodule:1.2.4'
 ```
