@@ -9,10 +9,16 @@ Mi nombre completo es <strong>Guillermo Guerrero González</strong>, soy program
 
 Aquí están mis últimos trabajos y proyectos
 
-
-
 <div>
 	<div class="row">
+		<div class="4u 12u(mobile)">
+			<section class="box style1">
+				<img src="images/logo_hasten.png" class="company"/>
+				<h3>Grupo Hasten</h3>
+				<p>Consultora tecnológica. Cliente Bankinter</p>
+				<p></p>
+			</section>
+		</div>
 		<div class="4u 12u(mobile)">
 			<section class="box style1">
 				<img src="images/aluxion.png" class="company"/>
@@ -52,8 +58,8 @@ Aquí están mis últimos trabajos y proyectos
 	</div>
 </div>	
 
-
-
+## Blog
+Puedes ver mis publicaciones en la sección <a href="blog\">Blog</a>
 
 ## ¿Quieres contactar conmigo?
 
