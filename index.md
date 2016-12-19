@@ -13,6 +13,14 @@ Aquí están mis últimos trabajos y proyectos
 	<div class="row">
 		<div class="4u 12u(mobile)">
 			<section class="box style1">
+				<img src="images/logo_ciber.png" class="company"/>
+				<h3>Ciber</h3>
+				<p>Consultora tecnológica. Cliente Santander</p>
+				<p></p>
+			</section>
+		</div>
+		<div class="4u 12u(mobile)">
+			<section class="box style1">
 				<img src="images/logo_hasten.png" class="company"/>
 				<h3>Grupo Hasten</h3>
 				<p>Consultora tecnológica. Cliente Bankinter</p>
