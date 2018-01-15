@@ -14,8 +14,8 @@ Aquí están mis últimos trabajos y proyectos
 		<div class="4u 12u(mobile)">
 			<section class="box style1">
 				<img src="images/logo_ciber.png" class="company"/>
-				<h3>Ciber</h3>
-				<p>Consultora tecnológica. Cliente Santander</p>
+				<h3>Ciber Experis</h3>
+				<p>Consultora tecnológica. Cliente Santander España. Nueva arquitectura</p>
 				<p></p>
 			</section>
 		</div>
